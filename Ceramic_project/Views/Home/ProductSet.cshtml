@@ -1,0 +1,101 @@
+﻿
+@{
+    ViewBag.Title = "ProductSet";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+<div class="ui container" style="margin-top: 25px;">
+    <div class="ui grid" style="background-color: #FCFCFC;;padding-bottom:50px">
+        <div class="sixteen wide column">
+            <div class="ui basic segment" style="background: rgba(0, 0, 0, 0.05) !important;font-family: 'Abel', sans-serif;letter-spacing: 2px;    margin-top: 1.3em;">
+                <div class="ui large breadcrumb">
+                    <a class="section">PRODUCT SET</a>
+                    <i class="right angle icon divider"></i>
+                    <a class="active section">ALL</a>
+                </div>
+            </div>
+        </div>
+        <div class="sixteen wide tablet four wide computer centered column" style="padding-right:15px">
+            <h4 class="header" style="font-family: 'font-family: 'Montserrat', sans-serif';letter-spacing: 2px;font-weight:bolder;padding: 0em 0.5em;margin-bottom:0px;color:#34495E">
+                BROWSE
+            </h4>
+            <div class="small_main_menu" style="padding: 0em 0.5em;">
+                <div class="ui fluid selection dropdown">
+                    <input type="hidden" name="cetegory">
+                    <i class="dropdown icon"></i>
+                    <div class="default text">Cetegory</div>
+                    <div class="menu">
+                        <div class="item" data-value="1">Glass</div>
+                        <div class="item" data-value="2">Plate</div>
+                        <div class="item" data-value="3">Bowl</div>
+                    </div>
+                </div>
+            </div>
+            <div class="ui relaxed divided selection large list normal_main_menu" style="font-family: 'Montserrat', sans-serif;letter-spacing: 1px;">
+                <div class="item" style="border:none">
+                    <div class="content">
+                        <a class="header" style="font-weight: lighter;">
+                            <span class="category_color">Glass</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="content">
+                        <a class="header" style="font-weight: lighter;">
+                            <span class="category_color">Plate</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="content">
+                        <a class="header" style="font-weight: lighter;">
+                            <span class="category_color">Bowl</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="twelve wide column centered row" style="padding-right:15px">
+            <br />
+            <div class="ui three stackable link cards">
+                <div class="card my_card">
+                    <div class="image">
+                        <img class=" product_set_pic" src="~/Content/Pic/glass_set.png">
+                    </div>
+                    <div class="content content_extra" style="text-align:center;font-weight:bolder;">
+                        Set : Every body love glass !
+                    </div>
+                    <div class="extra content_extra" style="text-align:left">
+                        We offer cute lovely glass for you ;)
+                    </div>
+                </div>
+                <div class="card my_card">
+                    <div class="image">
+                        <img class=" product_set_pic" src="~/Content/Pic/glass_set.png">
+                    </div>
+                    <div class="content content_extra" style="text-align:center;font-weight:bolder;">
+                        Set : Every body love glass 2 !
+                    </div>
+                    <div class="extra content_extra" style="text-align:left">
+                        The glass is every where
+                    </div>
+                </div>
+                <div class="card my_card">
+                    <div class="image">
+                        <img class=" product_set_pic" src="~/Content/Pic/glass_set.png">
+                    </div>
+                    <div class="content content_extra" style="text-align:center;font-weight:bolder;">
+                        Set : Every body love glass 3 !
+                    </div>
+                    <div class="extra content_extra" style="text-align:left">
+                        Come on, click me >3<
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>

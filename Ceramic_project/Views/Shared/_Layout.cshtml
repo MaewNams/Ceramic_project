@@ -1,0 +1,143 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    <link href="https://fonts.googleapis.com/css?family=Abel|Josefin+Sans|Josefin+Slab|Poiret+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Athiti|Prompt" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+</head>
+<body class="Site">
+    <!-- Bottom Left -->
+    <img src="~/Content/Pic/black_ribbon_top_left.png" class="black-ribbon stick-top stick-left" />
+ <!-- Following Menu --><!--
+      <div class="ui large top fixed hidden menu">
+        <div class="ui container">
+            <a class="active item">Home</a>
+            <a class="item">Work</a>
+            <a class="item">Company</a>
+            <a class="item">Careers</a>
+        </div>
+    </div>
+    -->
+
+    <!-- Sidebar Menu -->
+    <div class="ui vertical inverted sidebar menu">
+        <a class="active item">Home</a>
+        <a class="item">Work</a>
+        <a class="item">Company</a>
+        <a class="item">Careers</a>
+    </div>
+    <div class="pusher">
+        <main class="Site-content" style="background-image:url(../../Content/Pic/bg.jpg);background-size: cover;background-repeat:no-repeat;background-position:center;background-attachment:fixed;box-shadow: inset 0 0 0 1000px rgba(45,69,113,.8);height:100%;" >
+            <div style="padding-top:50px;padding-bottom:35px">
+                <div class="small_main_menu">
+                    <div class="ui text menu" style="margin-top:-50px;padding-left:1em">
+                        <div class="toc item">
+                            <i class="sidebar icon"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="ui text menu" style="margin-top:-50px; margin-bottom:-50px;padding-right:1em;float:right;font-family: 'Prompt', sans-serif;">
+                    <a class="item" style="color:#efefef">
+                        ไทย
+                    </a>
+                    <text class="item" style="color:#efefef">|</text>
+                    <a class="item" style="color:#efefef">
+                        อังกฤษ
+                    </a>
+                </div>
+
+
+                <div class="ui vertical center aligned segment" style="border:none;">
+                    <div class="ui container">
+                        <div class="ui grid">
+                            <div class="sixteen wide column centered row" style="padding-right:15px">
+                                <div class="ui text container" style="padding-bottom: 35px;">
+                                    <h1 class="ui header" style="font-family: 'Abel', sans-serif;letter-spacing: 20px;color:white">
+                                        KASALONG CERAMICS
+                                    </h1>
+                                    <h3 class="normal_main_menu" style="font-family: 'Abel', sans-serif;letter-spacing: 3px;color:#efefef">Over 40 years of manufacturing experience</h3>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ui container">
+                        <div class="ui secondary inverted six item menu normal_main_menu" style="border-bottom:1px solid #efefef;border-top:1px solid #efefef;font-family: 'Prompt', sans-serif;background-color:transparent">
+                            <a class="item" href="/home/index">
+                                Home
+                            </a>
+                            <div class="ui pointing dropdown item">
+                                <span class="text">ข้อมูลบริษัท</span>
+                                <i class="dropdown icon"></i>
+                                <div class="menu">
+                                    <a class="item" href="/home/about">ประวัติ</a>
+                                    <div class="item">ข้อมูลโรงงาน</div>
+                                    <div class="divider"></div>
+                                    <div class="item">รางวัล / การันตี</div>
+                                    <div class="divider"></div>
+                                    <div class="item">ขั้นตอนการทำงาน</div>
+                                    <div class="item">พื้นที่จัดแสดง</div>
+                                    <div class="item">ผู้จัดจำหน่าย</div>
+                                </div>
+                            </div>
+                            <div class="ui pointing dropdown item">
+                                <span class="text">ผลิตภัณฑ์</span>
+                                <i class="dropdown icon"></i>
+                                <div class="menu">
+                                    <a class="item" href="/home/productset">เซท</a>
+                                    <a class="item" href="/home/product"> แยกชิ้น</a>
+                                </div>
+                            </div>
+                            <div class="ui pointing dropdown item">
+                                <span class="text">ข่าวสารและกิจกรรม</span>
+                                <i class="dropdown icon"></i>
+                                <div class="menu">
+                                    <a class="item" href="/Home/ProductNews">ข่าวสารสินค้าใหม่</a>
+                                    <a class="item" href="/Home/ActivitiNews">ข่าวสารการออกบูธของบริษัท</a>
+                                </div>
+                            </div>
+                            <a class="item">
+                                ถาม-ตอบ
+                            </a>
+                            <a href="/home/contact" class="item">
+                                ติดต่อสอบถาม
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
+                @RenderBody()
+            </div>
+        </main>
+
+        @Scripts.Render("~/bundles/jquery")
+        @Scripts.Render("~/bundles/bootstrap")
+        @RenderSection("scripts", required: false)
+
+        </div>
+ <footer >
+        <div class="ui inverted vertical footer segment">
+            <div class="ui container">
+                <div class="ui stackable inverted stackable grid">
+                    <div class="sixteen wide column" style="text-align:right">
+                        <p>Copyright At Maewnam Aew Aew</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer> 
+        <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css" />
+        <link rel="stylesheet" type="text/css" href="http://kenwheeler.github.io/slick/slick/slick-theme.css" />
+</body>
+
+
+</html>
+
+
